@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path="/api")//class seviyesi için
+@RequestMapping(path="/api")//class seviyesi için...
 public class SayHello {
     @GetMapping(path="/hello")
     public String SayHello()
