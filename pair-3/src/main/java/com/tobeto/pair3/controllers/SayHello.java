@@ -1,8 +1,6 @@
 package com.tobeto.pair3.controllers;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(path="/api")//class seviyesi için...
@@ -12,4 +10,14 @@ public class SayHello {
     {
         return "Hello World!";
     }
+@PostMapping("/save")
+    public String Num()
+    {
+        return "Saved!";
+    }
+    @DeleteMapping("/delete")
+    public String delete(){
+        return "Data deleted!";
+    }
 }
+
